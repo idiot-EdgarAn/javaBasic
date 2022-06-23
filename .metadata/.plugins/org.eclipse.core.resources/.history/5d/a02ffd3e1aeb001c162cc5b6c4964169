@@ -1,0 +1,23 @@
+package exam02;
+
+public class RunStatementExample {
+
+	public static void main(String[] args) {
+		int x,y,z; // == int x; int y; int z;
+		x = 90; // x값에 90을 처음으로 저장하는 것이 "초기화", 90은 "초기값"
+		
+		int value = x + 10;
+		int result = value + 10;
+		System.out.println(result);
+		
+		int hour = 3;
+		int minute = 15;
+		System.out.println("현재시각 " + hour + "시 " + minute +"분");
+		
+		int totalMinute = (hour * 60) + minute;
+		System.out.println("시간 " + hour + minute + "분");
+		System.out.println("총" + totalMinute + "분");
+		
+	}
+
+}

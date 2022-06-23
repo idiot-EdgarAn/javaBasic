@@ -1,0 +1,27 @@
+package exam02;
+
+public class ex03_systemInCode {
+	// system.in.read()를 위해 예외 처리를 throw Exception 해주어야 함
+	public static void main(String[] args) throws Exception {
+		
+		/////////////입력값에 대한 것 1번, Enter 값 2번
+		int keyCode1;
+		
+		keyCode1 = System.in.read();
+		System.out.println("keyCode1: " + keyCode1);
+		
+		keyCode1 = System.in.read();
+		System.out.println("keyCode1: " + keyCode1);
+		
+		keyCode1 = System.in.read();
+		System.out.println("keyCode1: " + keyCode1);
+		
+		/////////////////
+		int keyCode2;
+		while(true) {
+			keyCode2 = System.in.read();
+			System.out.println("keyCode2 : " + keyCode2);
+		}
+		
+	}
+}

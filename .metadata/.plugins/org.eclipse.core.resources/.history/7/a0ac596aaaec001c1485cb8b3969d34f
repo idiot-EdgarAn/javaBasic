@@ -1,0 +1,23 @@
+package exam02;
+
+import java.util.Scanner;
+
+public class ex04_scanner {
+	public static void main(String[] args) throws Exception {
+		Scanner scanner = new Scanner(System.in);
+		String inputData;
+		
+		while(true) {
+			inputData = scanner.nextLine();
+			System.out.println("입력된 문자열: \"" + inputData + "\"");
+			/// inputData가 기본타입(ex:byte, short...)일 때에는 ==, 문자열일 때에는 .equals
+			if(inputData.equals("q")) {
+				break;
+			}
+		}
+		
+		System.out.println("종료");
+		
+		
+	}
+}
